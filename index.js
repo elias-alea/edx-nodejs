@@ -2,7 +2,7 @@ const fs = require('fs')
 const path = require('path')
 const csvToJson = require('csvtojson')
 const csvFilePath = 'customer-data.csv'
-const customerStr = '['
+let customerStr = '['
 
 csvToJson()
     .fromFile(csvFilePath, {
